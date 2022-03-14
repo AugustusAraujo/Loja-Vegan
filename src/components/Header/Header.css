@@ -1,0 +1,32 @@
+.backheader{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 3;
+    top:0px;
+    background: #2a9d8f;
+}
+header{
+    margin: 0px auto;
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.right-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-menu > *{
+    margin: 10px;
+}
