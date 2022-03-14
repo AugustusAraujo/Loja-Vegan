@@ -1,5 +1,9 @@
 <?php
 
+use App\Models\Produtos;
+use App\Models\Usuarios;
+use Illuminate\Http\Request;
+
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 /*
@@ -13,6 +17,24 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// PRODUTOS
+$router
+    ->group(["prefix" => "/produtos"], function () use ($router) {
+        $router->get("/", function (Request $request) {
+
+            return response(Produtos::all());
+        });
+    });
+// USUARIOS
+$router
+    ->group(["prefix" => "/usuarios"], function () use ($router) {
+        $router->get("/", function (Request $request) {
+            return response(Usuarios::all());
+        });
+    });
+// PEDIDOS
+$router
+    ->group(["prefix" => "/pedidos"], function () use ($router) {
+        $router->get("/", function (Request $request) {
+        });
+    });

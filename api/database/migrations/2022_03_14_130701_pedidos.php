@@ -17,6 +17,7 @@ class Pedidos extends Migration
             $table->id("pedido_id");
             $table->foreignId("usuario_id");
             $table->float("valor_pedido");
+            $table->json("items");
             $table->string("status")->default(1);
             //0 para cancelado , 1 para aguardando pagamento, 2 para aprovado , 3 para entregue , 4 para entrar em contato
             $table->timestamps(1);
