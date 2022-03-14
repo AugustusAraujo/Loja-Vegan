@@ -5,8 +5,10 @@
                 <img width="40" src="/veganlogo.svg" alt="LOGO" />
             </RouterLink>
             <div class="right-menu">
-                <Carrinho :height="30"/>
-                <DefaultUser :height="30"/>
+                <RouterLink to="/carrinho">
+                    <Carrinho :height="30" />
+                </RouterLink>
+                <DefaultUser :height="30" />
             </div>
         </header>
     </div>

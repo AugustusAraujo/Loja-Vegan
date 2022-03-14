@@ -4,7 +4,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/",
+      path: "/:id?",
       name: "home",
       component: () => import('../views/HomeView.vue')
     },
@@ -16,6 +16,16 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ProdutosView.vue')
     },
+    {
+      path: "/carrinho",
+      nane: "carrinho",
+      component: () => import("../views/CarrinhoView.vue")
+    },
+    {
+      path: "/cliente",
+      nane: "cliente",
+      component: () => import("../views/CarrinhoView.vue")
+    }
   ],
 });
 

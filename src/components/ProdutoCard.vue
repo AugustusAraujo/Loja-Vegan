@@ -6,6 +6,7 @@
                 src="https://vulcabras.vteximg.com.br/arquivos/ids/174856-1000-1000/43455789_1-047_img1.png?v=637278479972330000"
             />
             <div class="name">TÊNIS LEGAL</div>
+            
         </div>
         <div class="buybutton">R$ 15.99</div>
     </div>
